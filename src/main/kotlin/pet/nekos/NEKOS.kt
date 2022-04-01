@@ -16,8 +16,10 @@ object NEKOS {
 
         delay(2000)
         println("Testing firing a message...")
-        server.pluginManager.fireEvent(MessageEvent("TEST CONTENT..."))
+        server.pluginManager.fireEvent(MessageEvent("TEST CONTENT"))
+
+        delay(2000)
+        println("Testing firing a message... 2 ")
+        server.pluginManager.fireEvent(MessageEvent("TEST CONTENT 2"))
     }
-
-
 }
