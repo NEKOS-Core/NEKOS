@@ -1,5 +1,5 @@
 package pet.nekos.nekos
-import pet.nekos.api.Server
+import pet.nekos.api.server.Server
 import pet.nekos.api.event.message.MessageEvent
 
 import kotlinx.coroutines.*
@@ -16,10 +16,10 @@ object NEKOS {
 
         delay(2000)
         println("Testing firing a message...")
-        server.pluginManager.fireEvent(MessageEvent("TEST CONTENT"))
+        server.serverManager.fireEvent(MessageEvent("TEST CONTENT"))
 
         delay(2000)
         println("Testing firing a message... 2 ")
-        server.pluginManager.fireEvent(MessageEvent("TEST CONTENT 2"))
+        server.serverManager.fireEvent(MessageEvent("TEST CONTENT 2"))
     }
 }
