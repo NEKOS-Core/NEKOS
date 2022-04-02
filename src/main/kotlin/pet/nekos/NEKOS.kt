@@ -13,6 +13,7 @@ object NEKOS {
         var server = Server()
 
         server.loadPlugins()
+        server.loadServices()
 
         delay(2000)
         println("Testing firing a message...")
