@@ -7,7 +7,12 @@ echo "==== Compiling NEKOS.ExamplePlugin ===="
 cd ../NEKOS.ExamplePlugin
 ./gradlew build
 
+echo "==== Compiling NEKOS.Discord ===="
+cd ../NEKOS.Discord
+./gradlew build
+
 echo "==== Compiling NEKOS ===="
 cd ../NEKOS
 cp ../NEKOS.ExamplePlugin/build/libs/NEKOS_EXAMPLEPLUGIN.jar plugins/
+cp ../NEKOS.Discord/build/libs/NEKOS_DISCORD.jar services/
 ./gradlew build
