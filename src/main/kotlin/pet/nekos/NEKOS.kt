@@ -3,10 +3,6 @@ package pet.nekos.nekos
 import pet.nekos.api.server.Server
 import pet.nekos.api.event.message.MessageEvent
 
-import pet.nekos.api.user.User
-import pet.nekos.api.message.Message
-import pet.nekos.api.channel.Channel
-
 import kotlinx.coroutines.*
 
 /**
